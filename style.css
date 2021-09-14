@@ -1,0 +1,93 @@
+/* common_rules */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.body {
+	font-family: "Open Sans", sans-serif;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container_major {
+	width: 1289px;
+	margin: 0 auto;
+}
+
+.container_minor {
+	width: 1080px;
+	margin: 0 auto;
+}
+/* /common_rules */
+
+/* debug_rules */
+.debug header {
+	height: 890px;
+	background-color: #bcf2c1;
+}
+
+.debug main {
+	height: 5583px;
+}
+
+.debug footer {
+	height: 500px;
+	background-color: aqua;
+}
+
+.debug .section_piano {
+	height: 1421px;
+	background-color: #c4c4c4;
+}
+
+.debug .section_partner {
+	height: 890px;
+	background-color: #e32727;
+}
+
+.debug .section_business {
+	height: 1298px;
+	background-color: #2e3297;
+}
+
+.debug .section_team {
+	height: 1257px;
+	background-color: #70d96e;
+}
+
+.debug .section_faq {
+	height: 717px;
+	background-color: #d6d952;
+}
+
+/* /debug_rules */
+
+/**********
+SITE_HEADER 
+ **********/
+
+/**********
+/SITE_HEADER 
+**********/
+
+/**********
+SITE_MAIN 
+**********/
+
+/**********
+/SITE_MAIN 
+**********/
+
+/**********
+SITE_FOOTER 
+**********/
+
+/**********
+/SITE_FOOTER 
+**********/
