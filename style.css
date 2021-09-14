@@ -1,4 +1,4 @@
-/* common_rules */
+/* common_general_rules  */
 * {
 	margin: 0;
 	padding: 0;
@@ -24,9 +24,9 @@
 	width: 1080px;
 	margin: 0 auto;
 }
-/* /common_rules */
+/* /common_general_rules  */
 
-/* debug_rules */
+/* .debug */
 .debug header {
 	height: 890px;
 	background-color: #bcf2c1;
@@ -41,7 +41,7 @@
 	background-color: aqua;
 }
 
-.debug .section_piano {
+.debug .section_plan {
 	height: 1421px;
 	background-color: #c4c4c4;
 }
@@ -65,12 +65,147 @@
 	height: 717px;
 	background-color: #d6d952;
 }
-
-/* /debug_rules */
+/* /.debug */
 
 /**********
 SITE_HEADER 
- **********/
+**********/
+
+/* .nav */
+/* common_rules  */
+
+.list > li {
+	display: inline-block;
+}
+
+.nav_left,
+.nav_right {
+	float: left;
+	width: 49%;
+	margin: 0 0.1rem;
+}
+/* /common_rules  */
+
+.nav {
+	padding: 0.5rem 0;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	background-color: white;
+	z-index: 10;
+}
+/* .nav img {
+	width: 50%;
+	height: 50%;
+} */
+
+.list {
+	list-style: none;
+}
+
+.list > li {
+	display: inline-block;
+}
+
+.list > li > a {
+	color: black;
+	font-size: 0.7rem;
+	font-weight: 400;
+	padding-right: 2rem;
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+.nav_left,
+.nav_right {
+	height: 35px;
+	line-height: 35px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#logo {
+	text-align: left;
+}
+
+#btn_sign_in button {
+	background-color: #0061ff;
+	color: white;
+	padding: 0.2rem 0.5rem;
+	font-size: 8px;
+	font-weight: 100;
+	border: none;
+}
+
+#btn_sign_in {
+	text-align: right;
+}
+
+#btn_sign_in button:hover {
+	cursor: pointer;
+}
+/* /.nav */
+
+/* .jumbo */
+/* common_rules  */
+.text,
+img {
+	float: left;
+	width: 50%;
+}
+/* /common_rules  */
+
+.jumbo {
+	background-color: #b4d0e7;
+	width: 100%;
+	margin: 3rem 0;
+	height: 500px;
+	padding: 1% 0;
+}
+
+.jumbo h1 {
+	font-size: 80px;
+}
+
+.jumbo p {
+	padding: 1rem 0;
+	font-size: 15px;
+}
+
+.btn_free {
+	padding: 1rem 0;
+	padding-bottom: 0.5rem;
+}
+
+.btn_free > button {
+	padding: 0.5rem;
+	background-color: #0061ff;
+	border: none;
+	color: white;
+}
+
+.jumbo img {
+	position: relative;
+	right: 15%;
+	bottom: 0;
+}
+
+#subtitle {
+	padding: 0.5rem 0;
+	padding-bottom: 0.5rem;
+	color: black;
+}
+
+.text > i {
+	padding: 1.5rem 0;
+	padding-top: 0.5rem;
+	font-size: 30px;
+}
+/* /.jumbo */
 
 /**********
 /SITE_HEADER 
