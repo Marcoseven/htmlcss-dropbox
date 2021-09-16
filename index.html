@@ -43,8 +43,10 @@
 						<ul class="list_nav">
 							<li><a href="#">Supporto</a></li>
 							<li><a href="#">Contatta l'ufficio vendite</a></li>
-							<li><a href="#">Piani e prezzi</a></li>
-							<li><a id="btn_sign_in" href="#">Inizia</a></li>
+							<li><a href="#">Accedi</a></li>
+							<li>
+								<button id="btn_sign_in" type="submit">Inizia</button>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -70,8 +72,6 @@
 						<div class="btn_free">
 							<a href="#">Inizia la tua prova gratuita</a>
 						</div>
-						<br />
-						<br />
 						<div id="subtitle">Annulla in qualsiasi momento</div>
 						<i class="fas fa-arrow-down"></i>
 					</div>
@@ -82,10 +82,10 @@
 			</div>
 			<!-- /.jumbo -->
 
-			<!-- .section_plan -->
-			<div class="section_plan">
+			<!-- .section_col -->
+			<div class="section_col">
 				<div class="container_minor clearfix">
-					<div>
+					<div class="section_col_header">
 						<h2>Trova il piano Dropbox Business che fa per te</h2>
 						<form action="#">
 							<input
@@ -97,7 +97,7 @@
 							/>Fatturazione mensile
 							<input
 								class="radio"
-								id="input_second"
+								id="radio_second"
 								type="radio"
 								name="fatturazione"
 								value="Fatturazione annuale"
@@ -106,55 +106,58 @@
 						</form>
 					</div>
 
-					<!-- .col_left -->
-					<div class="row_section_plan clearfix">
+					<div class="row_section_col clearfix">
+						<!-- .col_left -->
 						<div class="col_left">
-							<div class="col_header">
-								<h4 id="title_col"><i class="far fa-user"></i> Singolo</h4>
-								<hr />
-							</div>
-
-							<div class="text_col">
-								<div><h3 id="subtitle_col">Professional</h3></div>
-								<div id="price">19,99 €</div>
-								<div id="month">/mese</div>
-
-								<div><i class="far fa-user"></i> 1 utente</div>
-								<div id="folder">
-									<i class="far fa-folder"></i> 3 TB di spazio di archiviazione
-									sicuro
+							<div class="card">
+								<div class="col_header">
+									<h4 id="title_col"><i class="far fa-user"></i> Singolo</h4>
 								</div>
-								<div class="premium">
-									<div id="pencil"><i class="fas fa-pencil-alt"></i></div>
-									<div id="text_pencil">
-										Funzioni di produttività premium e <br />
-										condivisone file semplice e sicura
+
+								<div class="text_col">
+									<div><h3 class="subtitle_col">Professional</h3></div>
+									<div class="price">19,99 €</div>
+									<div class="month">/mese</div>
+
+									<div><i class="far fa-user"></i> 1 utente</div>
+									<div class="folder">
+										<i class="far fa-folder"></i> 3 TB di spazio di
+										archiviazione sicuro
 									</div>
-								</div>
-								<div id="free"><a href="#">Prova gratis per 30 giorni</a></div>
-								<div class="buy_now">
-									oppure <a id="now" href="#">acquista ora</a>
-								</div>
+									<div class="premium">
+										<div class="pencil"><i class="fas fa-pencil-alt"></i></div>
+										<div class="text_pencil">
+											Funzioni di produttività premium e <br />
+											condivisone file semplice e sicura
+										</div>
+									</div>
+									<div class="free">
+										<a href="#">Prova gratis per 30 giorni</a>
+									</div>
+									<div class="buy_now">
+										oppure <a class="now" href="#">acquista ora</a>
+									</div>
 
-								<div id="row_short"></div>
-								<div><h4 id="points">Punti salienti del piano</h4></div>
-								<div class="check">
-									<i class="fas fa-check"></i> Invia file fino a 100 GB con
-									Dropbox <br />Transfert
-								</div>
-								<div class="check">
-									<i class="fas fa-check"></i> Cartelle offline su dispositivi
-									mobili
-								</div>
-								<div class="check">
-									<i class="fas fa-check"></i> Pulizia remota dell'account
-								</div>
-								<div class="check">
-									<i class="fas fa-check"></i> Filigrana documento
-								</div>
-								<div class="check">
-									<i class="fas fa-check"></i> Assistenza prioritaria via email
-									e <br />chat
+									<div class="row_short"></div>
+									<div><h4 class="points">Punti salienti del piano</h4></div>
+									<div class="check">
+										<i class="fas fa-check"></i> Invia file fino a 100 GB con
+										Dropbox <br />Transfert
+									</div>
+									<div class="check">
+										<i class="fas fa-check"></i> Cartelle offline su dispositivi
+										mobili
+									</div>
+									<div class="check">
+										<i class="fas fa-check"></i> Pulizia remota dell'account
+									</div>
+									<div class="check">
+										<i class="fas fa-check"></i> Filigrana documento
+									</div>
+									<div class="check">
+										<i class="fas fa-check"></i> Assistenza prioritaria via
+										email e <br />chat
+									</div>
 								</div>
 							</div>
 						</div>
@@ -162,56 +165,59 @@
 
 						<!-- .col_center -->
 						<div class="col_center">
-							<div class="col_header">
-								<h4 id="title_col"><i class="far fa-user"></i> Team</h4>
-								<hr />
-							</div>
-
-							<div class="text_col">
-								<div><h3 id="subtitle_col">Standard</h3></div>
-								<div id="price">19,99 €</div>
-								<div id="month">/utente /mese, a partire da 3 utenti</div>
-
-								<div><i class="fas fa-user-plus"></i> 1 utente</div>
-								<div id="folder">
-									<i class="far fa-folder"></i> 3 TB di spazio di archiviazione
-									sicuro
+							<div class="card">
+								<div class="col_header">
+									<h4 id="title_col"><i class="far fa-building"></i> Team</h4>
 								</div>
-								<div class="premium">
-									<div id="smile"><i class="far fa-smile"></i></div>
-									<div id="text_smile">
-										Funzioni di produttività premium e <br />
-										condivisone file semplice e sicura
+
+								<div class="text_col">
+									<div><h3 class="subtitle_col">Standard</h3></div>
+									<div class="price">19,99 €</div>
+									<div class="month">/utente /mese, a partire da 3 utenti</div>
+
+									<div><i class="fas fa-user-plus"></i> 1 utente</div>
+									<div class="folder">
+										<i class="far fa-folder"></i> 3 TB di spazio di
+										archiviazione sicuro
 									</div>
-								</div>
-								<div id="free"><a href="#">Prova gratis per 30 giorni</a></div>
-								<div class="buy_now">
-									oppure <a id="now" href="#">acquista ora</a>
-								</div>
+									<div class="premium">
+										<div class="smile"><i class="far fa-smile"></i></div>
+										<div class="text_smile">
+											Funzioni di produttività premium e <br />
+											condivisone file semplice e sicura
+										</div>
+									</div>
+									<div class="free">
+										<a href="#">Prova gratis per 30 giorni</a>
+									</div>
+									<div class="buy_now">
+										oppure <a class="now" href="#">acquista ora</a>
+									</div>
 
-								<div id="row_short"></div>
-								<div><h4 id="points">Punti salienti del piano</h4></div>
-								<div class="check">
-									<i class="fas fa-check"></i> Invia file fino a 100 GB con
-									Dropbox <br />Transfert
-								</div>
-								<div class="check">
-									<i class="fas fa-check"></i> Cartelle offline su dispositivi
-									mobili
-								</div>
-								<div class="check">
-									<i class="fas fa-check"></i> Pulizia remota dell'account
-								</div>
-								<div class="check">
-									<i class="fas fa-check"></i> Filigrana documento
-								</div>
-								<div class="check">
-									<i class="fas fa-check"></i> Assistenza prioritaria via email
-									e <br />chat
-								</div>
-								<div class="check">
-									<i class="fas fa-check"></i> Assistenza prioritaria via email
-									e <br />chat
+									<div class="row_short"></div>
+									<div><h4 class="points">Punti salienti del piano</h4></div>
+									<div class="check">
+										<i class="fas fa-check"></i> Invia file fino a 100 GB con
+										Dropbox <br />Transfert
+									</div>
+									<div class="check">
+										<i class="fas fa-check"></i> Cartelle offline su dispositivi
+										mobili
+									</div>
+									<div class="check">
+										<i class="fas fa-check"></i> Pulizia remota dell'account
+									</div>
+									<div class="check">
+										<i class="fas fa-check"></i> Filigrana documento
+									</div>
+									<div class="check">
+										<i class="fas fa-check"></i> Assistenza prioritaria via
+										email e <br />chat
+									</div>
+									<div class="check">
+										<i class="fas fa-check"></i> Assistenza prioritaria via
+										email e <br />chat
+									</div>
 								</div>
 							</div>
 						</div>
@@ -219,52 +225,55 @@
 
 						<!-- .col_right -->
 						<div class="col_right">
-							<div class="col_header">
-								<h4 id="title_col"><i class="far fa-user"></i> Team</h4>
-								<hr />
-							</div>
-
-							<div class="text_col">
-								<div><h3 id="subtitle_col">Advanced</h3></div>
-								<div id="price">19,99 €</div>
-								<div id="month">/utente /mese, a partire da 3 utenti</div>
-
-								<div><i class="fas fa-user-plus"></i> 1 utente</div>
-								<div id="smile">
-									<i class="far fa-smile"></i> 3 TB di spazio di archiviazione
-									sicuro
+							<div class="card">
+								<div class="col_header">
+									<h4 id="title_col"><i class="far fa-building"></i> Team</h4>
 								</div>
-								<div class="premium">
-									<div id="pencil"><i class="fas fa-pencil-alt"></i></div>
-									<div id="text_pencil">
-										Funzioni di produttività premium e <br />
-										condivisone file semplice e sicura
+
+								<div class="text_col">
+									<div><h3 class="subtitle_col">Advanced</h3></div>
+									<div class="price">19,99 €</div>
+									<div class="month">/utente /mese, a partire da 3 utenti</div>
+
+									<div><i class="fas fa-user-plus"></i> 1 utente</div>
+									<div class="smile">
+										<i class="far fa-smile"></i> 3 TB di spazio di archiviazione
+										sicuro
 									</div>
-								</div>
-								<div id="free"><a href="#">Prova gratis per 30 giorni</a></div>
-								<div class="buy_now">
-									oppure <a id="now" href="#">acquista ora</a>
-								</div>
+									<div class="premium">
+										<div class="pencil"><i class="fas fa-pencil-alt"></i></div>
+										<div class="text_pencil">
+											Funzioni di produttività premium e <br />
+											condivisone file semplice e sicura
+										</div>
+									</div>
+									<div class="free">
+										<a href="#">Prova gratis per 30 giorni</a>
+									</div>
+									<div class="buy_now">
+										oppure <a class="now" href="#">acquista ora</a>
+									</div>
 
-								<div id="row_short"></div>
-								<div><h4 id="points">Punti salienti del piano</h4></div>
-								<div class="check">
-									<i class="fas fa-check"></i> Invia file fino a 100 GB con
-									Dropbox <br />Transfert
-								</div>
-								<div class="check">
-									<i class="fas fa-check"></i> Cartelle offline su dispositivi
-									mobili
-								</div>
-								<div class="check">
-									<i class="fas fa-check"></i> Pulizia remota dell'account
-								</div>
-								<div class="check">
-									<i class="fas fa-check"></i> Filigrana documento
-								</div>
-								<div class="check">
-									<i class="fas fa-check"></i> Assistenza prioritaria via email
-									e <br />chat
+									<div class="row_short"></div>
+									<div><h4 class="points">Punti salienti del piano</h4></div>
+									<div class="check">
+										<i class="fas fa-check"></i> Invia file fino a 100 GB con
+										Dropbox <br />Transfert
+									</div>
+									<div class="check">
+										<i class="fas fa-check"></i> Cartelle offline su dispositivi
+										mobili
+									</div>
+									<div class="check">
+										<i class="fas fa-check"></i> Pulizia remota dell'account
+									</div>
+									<div class="check">
+										<i class="fas fa-check"></i> Filigrana documento
+									</div>
+									<div class="check">
+										<i class="fas fa-check"></i> Assistenza prioritaria via
+										email e <br />chat
+									</div>
 								</div>
 							</div>
 						</div>
@@ -272,7 +281,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- /.section_plan -->
+			<!-- /.section_col -->
 
 			<!-- .section_partner -->
 			<div class="section_partner">
@@ -472,9 +481,12 @@
 			<div class="section_team">
 				<div class="container_minor">
 					<h2>Più di 500.000 team <br />utilizzano Dropbox Business</h2>
+					<a id="link_section_team" href="#"
+						>Scopri di più sui nostri clienti</a
+					>
 				</div>
 
-				<div class="row clearfix">
+				<div class="row_section_team clearfix">
 					<div class="col_1 clearfix">
 						<div class="item_team">
 							<div class="box_1">
@@ -503,14 +515,14 @@
 						<div class="item_team">
 							<div class="box_4">
 								<img
-									src="./image/university_of_florida.svg"
+									src="./image/topps.svg"
 									alt="immagine con il logo di Topps"
 								/>
 							</div>
 						</div>
 					</div>
 					<div class="col_2">
-						<div>
+						<div id="image_col_2">
 							<img
 								src="./image/designit.svg"
 								alt="immagine del logo di Designit a wipro company"
@@ -569,11 +581,21 @@
 				</div>
 				<!-- .team_under -->
 				<div class="team_under">
-					<div class="container_minor">
-						<div class="team_under_minor">
+					<div class="container_minor clearfix">
+						<div>
+							<div class="text_team_under">
+								<h2 id="title_team_under">
+									Porta Dropbox Business <br />nella tua azienda.
+								</h2>
+							</div>
+							<div class="link_team_under">
+								<a href="#">Inizia la tua prova gratuita.</a>
+							</div>
+						</div>
+						<!-- <div class="team_under_minor">
 							<h2>Porta Dropbox Business <br />nella tua azienda.</h2>
 							<a href="#">Inizia la tua prova gratuita.</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<!-- /.team_under -->
@@ -585,12 +607,49 @@
 				<div class="faq">
 					<div class="container_minor">
 						<h3>Domande frequenti</h3>
+						<div id="hr_long_first"></div>
+						<h4 class="title_faq">
+							Qual'è la differenza tra Dropbox Business Standard e Dropbox
+							Business Advanced?
+						</h4>
+						<span class="arrow"><i class="fas fa-chevron-down"></i></span>
+						<p class="text_faq">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+							sunt necessitatibus, repellendus consequuntur at fugiat tempore
+							earum nihil commodi quaerat nisi tempora ducimus totam veritatis
+							dignissimos blanditiis itaque, ut nam.
+						</p>
 						<div id="hr_long"></div>
 						<h4 class="title_faq">
 							Qual'è la differenza tra Dropbox Business Standard e Dropbox
-							Business Advanced
+							Business Advanced?
 						</h4>
-						<p class="title__faq">
+						<span class="arrow"><i class="fas fa-chevron-down"></i></span>
+						<p class="text_faq">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+							sunt necessitatibus, repellendus consequuntur at fugiat tempore
+							earum nihil commodi quaerat nisi tempora ducimus totam veritatis
+							dignissimos blanditiis itaque, ut nam.
+						</p>
+						<div id="hr_long"></div>
+						<h4 class="title_faq">
+							Qual'è la differenza tra Dropbox Business Standard e Dropbox
+							Business Advanced?
+						</h4>
+						<span class="arrow"><i class="fas fa-chevron-down"></i></span>
+						<p class="text_faq">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+							sunt necessitatibus, repellendus consequuntur at fugiat tempore
+							earum nihil commodi quaerat nisi tempora ducimus totam veritatis
+							dignissimos blanditiis itaque, ut nam.
+						</p>
+						<div id="hr_long"></div>
+						<h4 class="title_faq">
+							Qual'è la differenza tra Dropbox Business Standard e Dropbox
+							Business Advanced?
+						</h4>
+						<span class="arrow"><i class="fas fa-chevron-down"></i></span>
+						<p class="text_faq">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum
 							sunt necessitatibus, repellendus consequuntur at fugiat tempore
 							earum nihil commodi quaerat nisi tempora ducimus totam veritatis
