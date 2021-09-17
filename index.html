@@ -6,10 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&amp;display=swap"
-			rel="stylesheet"
-		/>
+
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -17,51 +14,52 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&amp;display=swap"
+			rel="stylesheet"
+		/>
+
 		<title>Dropbox</title>
 	</head>
 	<body class="">
 		<!-- #site_header -->
 		<header id="site_header">
 			<!-- .nav clearfix -->
-			<div class="nav clearfix">
-				<div class="nav_left">
-					<nav class="list_left">
-						<ul class="list_nav">
-							<li>
-								<a href="#"
-									><img src="./image/logo-small.png" alt="logo Dropbox"
-								/></a>
-							</li>
-							<li><a href="#">Perché Dropbox</a></li>
-							<li><a href="#">Funzioni</a></li>
-							<li><a href="#">Piani e prezzi</a></li>
-						</ul>
-					</nav>
+			<nav class="nav clearfix">
+				<div class="menu_left">
+					<ul class="list_nav">
+						<li id="li_nav">
+							<a style="border-bottom: none" href="#"
+								><img src="./image/logo-small.png" alt=""
+							/></a>
+						</li>
+						<li id="li_nav"><a href="#">Perché Dropbox</a></li>
+						<li id="li_nav"><a href="#">Funzioni</a></li>
+						<li id="li_nav"><a href="#">Piani e prezzi</a></li>
+					</ul>
 				</div>
-				<div class="nav_right">
-					<nav class="list_left">
-						<ul class="list_nav">
-							<li><a href="#">Supporto</a></li>
-							<li><a href="#">Contatta l'ufficio vendite</a></li>
-							<li><a href="#">Accedi</a></li>
-							<li>
-								<button id="btn_sign_in" type="submit">Inizia</button>
-							</li>
-						</ul>
-					</nav>
+				<div class="menu_right">
+					<ul class="list_nav">
+						<li id="li_nav"><a href="#">Supporto</a></li>
+						<li id="li_nav"><a href="#">Contatta l'ufficio vendite</a></li>
+						<li id="li_nav"><a href="#">Accedi</a></li>
+						<li id="li_nav">
+							<button id="btn_sign_in" type="submit">Inizia</button>
+						</li>
+					</ul>
 				</div>
-			</div>
+			</nav>
 			<!-- /.nav clearfix -->
 		</header>
 		<!-- /#site_header -->
 
 		<!-- #site_main -->
 		<main id="site_main">
-			<!-- .jumbo -->
-			<div class="jumbo">
+			<!-- .jumbotron -->
+			<div class="jumbotron">
 				<div class="container_major clearfix">
 					<h1>Tutto ciò che ti serve per il lavoro, <br />in un unico posto</h1>
-					<div class="text_jumbo">
+					<div class="text_jumbotron">
 						<p>
 							Finalmente tutti i tuoi strumenti, contenuti e <br />
 							colalboratori sono accessibili dallo stesso posto. <br />Dropbox
@@ -73,17 +71,17 @@
 							<a href="#">Inizia la tua prova gratuita</a>
 						</div>
 						<div id="subtitle">Annulla in qualsiasi momento</div>
-						<i class="fas fa-arrow-down"></i>
+						<a href="#section_col"><i class="fas fa-arrow-down"></i></a>
 					</div>
-					<div class="image_jumbo">
+					<div class="image_jumbotron">
 						<img src="./image/jumbo.png" alt="" />
 					</div>
 				</div>
 			</div>
 			<!-- /.jumbo -->
 
-			<!-- .section_col -->
-			<div class="section_col">
+			<!-- #section_col -->
+			<div id="section_col">
 				<div class="container_minor clearfix">
 					<div class="section_col_header">
 						<h2>Trova il piano Dropbox Business che fa per te</h2>
@@ -164,7 +162,7 @@
 						<!-- /.col_left -->
 
 						<!-- .col_center -->
-						<div class="col_center">
+						<div class="col_left">
 							<div class="card">
 								<div class="col_header">
 									<h4 id="title_col"><i class="far fa-building"></i> Team</h4>
@@ -187,7 +185,7 @@
 											condivisone file semplice e sicura
 										</div>
 									</div>
-									<div class="free">
+									<div style="margin-top: 2rem" class="free">
 										<a href="#">Prova gratis per 30 giorni</a>
 									</div>
 									<div class="buy_now">
@@ -274,6 +272,10 @@
 										<i class="fas fa-check"></i> Assistenza prioritaria via
 										email e <br />chat
 									</div>
+									<div class="check">
+										<i class="fas fa-check"></i> Assistenza prioritaria via
+										email e <br />chat
+									</div>
 								</div>
 							</div>
 						</div>
@@ -281,7 +283,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- /.section_col -->
+			<!-- /#section_col -->
 
 			<!-- .section_partner -->
 			<div class="section_partner">
@@ -581,21 +583,15 @@
 				</div>
 				<!-- .team_under -->
 				<div class="team_under">
-					<div class="container_minor clearfix">
-						<div>
-							<div class="text_team_under">
-								<h2 id="title_team_under">
-									Porta Dropbox Business <br />nella tua azienda.
-								</h2>
-							</div>
-							<div class="link_team_under">
-								<a href="#">Inizia la tua prova gratuita.</a>
-							</div>
+					<div class="container_major clearfix">
+						<div class="text_team_under">
+							<h2 id="title_team_under">
+								Porta Dropbox Business <br />nella tua azienda.
+							</h2>
 						</div>
-						<!-- <div class="team_under_minor">
-							<h2>Porta Dropbox Business <br />nella tua azienda.</h2>
-							<a href="#">Inizia la tua prova gratuita.</a>
-						</div> -->
+						<div class="link_team_under">
+							<a href="#">Inizia la tua prova gratuita</a>
+						</div>
 					</div>
 				</div>
 				<!-- /.team_under -->
@@ -717,20 +713,12 @@
 					</ul>
 				</div>
 				<div id="hr_short"></div>
-				<div class="languages">
+				<div class="lift_off">
 					<i class="fas fa-globe-americas"></i>
-					<form>
-						<select name="languages" id="languages">
-							<option value="Italiano">Italiano</option>
-							<option value="България">България</option>
-							<option value="čeština">čeština</option>
-							<option value="Dansk">Dansk</option>
-							<option value="Deutsch">Deutsch</option>
-							<option value="Ελληνικά">Ελληνικά</option>
-							<option value="English, USA">English, USA</option>
-							<option value="Español">Español</option>
-						</select>
-					</form>
+					<a id="up_fast" href="#site_header">Italiano</a>
+					<a id="up_fast" href="#site_header"
+						><i class="fas fa-angle-up"></i
+					></a>
 				</div>
 			</div>
 		</footer>
